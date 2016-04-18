@@ -1,0 +1,18 @@
+<h1> Ascii creator </h1>
+
+<form action="/asciis" method="POST">
+  <div>
+    <label for="text_inspection_user_text">Text</label>
+    <textarea name="text_inspection[user_text]" id="text_inspection_user_text"></textarea>
+  </div> 
+  <input type="text" name="font" placeholder="Enter a font style">
+  <button type="submit">Submit text</button>
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+</form>
+
+<h1> Available font styles: </h1>
+	<ul>
+		<li>Slant</li>
+		<li>Alligator</li>
+		<li>3-D</li>
+	</ul>

@@ -1,0 +1,11 @@
+
+<h2> Your wordcount for this sample text is <%= @word_count %> </h2>
+
+<h2> The estimated read time of your sample text is <%= @wpm %> minutes </h2>
+<h2> The estimated read time of your sample text is <%= @wps %> seconds </h2>
+<h3> You used the following words multiple times: <%= @frequency %> </h3>
+
+<h3> The text you entered to sample was: </h3> <h5><%=@text %></h5>
+
+
+<h3> Start another word count <%= link_to "here!", "/" %>
